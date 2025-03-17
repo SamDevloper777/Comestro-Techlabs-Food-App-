@@ -1,9 +1,9 @@
-import { Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import FoodCard from '../components/Home/FoodCard';
 
 const Index = () => {
   return (
-    <View className="flex-1 bg-white px-4 pt-6">
+    <ScrollView className="flex-1 bg-white px-4 pt-6">
       {/* Header */}
       <View className="flex-row items-center justify-between mb-4">
         <TouchableOpacity className="p-2">
@@ -43,7 +43,7 @@ const Index = () => {
       <FoodCard />
       <FoodCard />
       <FoodCard />
-    </View>
+    </ScrollView>
   );
 };
 
